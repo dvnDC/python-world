@@ -1,6 +1,6 @@
-from .Organism import Organism
-from Action import Action
-from ActionEnum import ActionEnum
+from .organism import Organism
+from action import Action
+from action_enum import ActionEnum
 import random
 
 

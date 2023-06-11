@@ -1,13 +1,22 @@
-from .Plant import Plant
-from Position import Position
-from Action import Action
-from ActionEnum import ActionEnum
+from .plant import Plant
+from position import Position
+from action import Action
+from action_enum import ActionEnum
 
 
 class Toadstool(Plant):
 
 	def __init__(self, toadstool=None, position=None, world=None):
 		super(Toadstool, self).__init__(toadstool, position, world)
+		self.__color = (255, 0, 0)  # Add the color attribute, for example, red color (R, G, B)
+
+	@property
+	def color(self):
+		return self.__color
+
+	@color.setter
+	def color(self, value):
+		self.__color = value
 
 	def clone(self):
 		return Toadstool(self, None, None)

@@ -1,7 +1,7 @@
-from Position import Position
-from Organisms.Plant import Plant
-from Action import Action
-from ActionEnum import ActionEnum
+from position import Position
+from Organisms.plant import Plant
+from action import Action
+from action_enum import ActionEnum
 
 
 class World(object):

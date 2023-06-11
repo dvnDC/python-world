@@ -1,4 +1,4 @@
-from ActionEnum import ActionEnum
+from action_enum import ActionEnum
 
 
 class Action(object):

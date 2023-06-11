@@ -1,6 +1,6 @@
-from .Organism import Organism
-from Action import Action
-from ActionEnum import ActionEnum
+from .organism import Organism
+from action import Action
+from action_enum import ActionEnum
 import random
 
 
@@ -8,6 +8,15 @@ class Plant(Organism):
 
 	def __init__(self, plant=None, position=None, world=None):
 		super(Plant, self).__init__(plant, position, world)
+		self.__color = (255, 0, 0)  # Add the color attribute, for example, red color (R, G, B)
+
+	@property
+	def color(self):
+		return self.__color
+
+	@color.setter
+	def color(self, value):
+		self.__color = value
 
 	def move(self):
 		result = []

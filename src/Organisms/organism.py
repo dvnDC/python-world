@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
-from Position import Position
-from Action import Action
-from ActionEnum import ActionEnum
+from position import Position
+from action import Action
+from action_enum import ActionEnum
 
 
 class Organism(ABC):
