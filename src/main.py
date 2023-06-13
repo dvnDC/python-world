@@ -40,12 +40,4 @@ if __name__ == '__main__':
 
 		draw_world(screen, pyWorld)
 		pyWorld.makeTurn()
-		pygame.time.delay(500)  # Delay for 500 milliseconds
-
-	# print(pyWorld)
-
-	# for _ in range(0, 100):
-	# 	input('')
-	# 	# os.system('cls')
-	# 	pyWorld.makeTurn()
-	# 	print(pyWorld)
+		pygame.time.delay(500)

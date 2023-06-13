@@ -51,6 +51,7 @@ class World(object):
 		return self.__separator
 
 	def makeTurn(self):
+		print("\n Turn: " + str(self.turn) + "\n")
 		actions = []
 
 		for org in self.organisms:
